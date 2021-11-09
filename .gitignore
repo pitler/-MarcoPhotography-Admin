@@ -1,18 +1,23 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
+#Ignore files
+.htaccess
+config.php
+log.php
+db/dbCredentials.php
+logs/sysLog.log
+.htaccess
+.user.ini
+php.ini
+error_log
 
-# Other files and folders
-.settings/
+#Ignore links
+pw
+pwutils
+repository
 
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
-
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+#Ignore folders
+logs
+./pw
+./pwutils
+./repository
+log.php
+.vscode/
