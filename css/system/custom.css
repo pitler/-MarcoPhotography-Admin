@@ -1,0 +1,111 @@
+
+
+
+/*Cambia el tamaño de la letra del dataTable*/
+div.dataTables_wrapper {
+ /*   width: 900px;
+   margin: 0 auto;*/
+    font-size: 12px;
+}
+
+/*Pone el ancho de la dataTable al 100% */
+.dTableWCustomFix
+{
+    width:100%;
+}
+
+th,
+td {
+    white-space: nowrap;
+    /*  font-size: 12px;*/
+}
+
+tr {
+    height: 15px;
+}
+
+.btn-group-sm>.btn,
+.btn-sm {
+    line-height: .6;
+}
+
+.dataTables tbody tr {
+    min-height: 20px;
+    /* or whatever height you need to make them all consistent */
+}
+
+table.dataTable tbody th,
+table.dataTable tbody td {
+    padding: 4px 10px;
+    /* e.g. change 8x to 4px here */
+}
+
+
+/*.datepicker{ z-index:99999 !important; }*/
+
+
+/*Para los campos editables*/
+
+.bgTable {
+    background-color: #e3e4e5;
+    padding: 5px;
+    border: 1px solid #336699;
+}
+
+.tableFixHead {
+    overflow-y: auto;
+    height: 300px;
+}
+
+.tableFixHead thead th {
+    position: sticky;
+    top: 0;
+}
+
+.detailTable {
+    border-collapse: collapse;
+    width: 90%;
+    font-size: 11px;
+}
+
+.detailTable th {
+    background: #d4d3d3;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #d4d3d3;
+}
+
+.detailTable td {
+    border: 1px solid #d4d3d3;
+}
+
+/*Para bajar el tamaño del datepicker*/
+div.ui-datepicker{
+    font-size:12px;
+   }
+
+/*Spinner para el titulo de los modals*/
+   .modalSpinner
+   {
+       margin-left:8px;
+       margin-top:11px;
+   }
+
+   
+#sortable { 
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+    width: 90%; 
+  }
+  #sortable li { 
+    margin: 3px 3px 3px 0; 
+    padding: 1px; 
+    float: left; 
+    border: 0;
+    background: none;
+  }
+  #sortable li img{
+    width: 144px;
+    height: 112px;
+  }

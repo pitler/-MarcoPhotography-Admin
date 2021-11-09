@@ -1,0 +1,72 @@
+        <div class="row">
+            <div class="col-md-6" id="headerLeft">
+                <div class="box">
+                    <div class="box-body">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                &nbsp; 
+                            </div>
+                            <!-- /.col-lg-12 -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- /.box-body -->
+                    <div class="box-footer" id="formContent">
+                        <button class="btn btn-info" style="margin-right: 5px;" id="btnList"><i class="fa  fa-th-list"> </i>&ensp; Ver lista</button> __ADD__ __FILTERBTN__
+                        <hr> __FILTER__                        
+                    </div>
+                </div>
+                <!-- /.box -->
+            </div>
+            <!--/.col (Col left) -->
+
+            <div class="col-md-6" id="headerRight">
+                <div class="col-lg-9 text-center" id="headerLoader">
+                    <img src='pw/imagenes/preloader.gif'> <br><small class = "">Consultando</small>
+                </div>
+            </div>
+            <!--/.col (col Rigth) -->
+        </div>
+        <!-- /.row -->
+
+<div class="row">
+    <div class="col-md-12" id="mainContent">
+
+    </div>
+</div>
+
+
+<div id="formModal" class="modal fade">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="modalTitle" name="modalTitle"></h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <form class="g-brd-around g-brd-gray-light-v4 g-pa-10 " role="form" id="mainForm" name="mainForm">
+                <div class="modal-body" id="modalBody" name="modalBody">
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-info" style="margin-right: 5px;" id="btnSave" name="btnSave"><i class="fa fa-save"> </i> Guardar 1</button>
+                    <button data-dismiss="modal" class="btn btn-info" style="margin-right: 5px;" id="btnClose" name="btnClose"><i class="fa  fa fa-close"> </i> Cerrar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    var loadFirst = "__LOADFIRST__";
+    var listAction = "__LISTACTION__";
+    var firstAction = "__FIRSTACTION__";
+    var validateInsertAction = "__VINSERTACTION__";
+    var formAction = "__FORMACTION__";
+    var controller = "__CONTROLLER__";
+    var insertAction = "__INSERTACTION__";
+    var updateAction = "__UPDATEACTION__";
+    var validateFields = "__VALIDATEFIELDS__";
+    var deleteAction = "__DELETEACTION__";
+    var showFormModal = "__SHOWFORMODAL__";
+    var filesController = "__FILECONTROLLER__";
+    var validateArr = "";
+</script>

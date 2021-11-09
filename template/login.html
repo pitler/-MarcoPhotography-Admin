@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>__TITLE__</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="pw/assets/adminlte/plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <!--Toast notify-->
+  <link rel="stylesheet" href="pw/assets/adminlte/plugins/toastr/toastr.min.css">
+
+
+  <link rel="stylesheet" href="pw/assets/adminlte/css/adminlte.min.css">
+  <link rel="stylesheet" href="assets/css/mainStyle.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+</head>
+<body class="hold-transition login-page">
+<div class="login-box">
+ 
+  <!-- /.login-logo -->
+  <div class="card">
+    <div class="card-body login-card-body">
+
+        <div class="login-logo">
+            <img src="repository/imagenes/logo/logoch.png" alt="Logo">
+        </div>
+        <hr>
+      <!--<p class="login-box-msg">__TITLE__</p>-->
+
+      <form id="loginForm">
+        <div class="input-group ">
+          <input type="text" class="form-control" placeholder="Nombre de usuario" id = "login" name = "login">    
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-user"></span>
+            </div>
+          </div>          
+        </div>
+        <small class="form-control-feedback" id="loginError"></small>  
+        <br/>
+        <div class="input-group mb-3">
+          <input type="password" class="form-control" placeholder="Password" id = "password" name = "password">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-lock"></span>
+            </div>
+          </div>
+        </div>
+        <small class="form-control-feedback" id="passwordError"></small>  
+        <div class="row">
+          <div class="col-8">
+            <span id = "loginLoader"><img src='pw/imagenes/preloader.gif' > </span>
+          </div>
+          <!-- /.col -->
+          <div class="col-4">
+            <button type="submit" class="btn btn-info btn-block" id = "loginBtn" name = "loginBtn">Entrar</button>
+          </div>
+          <!-- /.col -->
+        </div>
+      </form>
+
+      <p class="mb-0">
+        <a href="?mod=recover" class="text-center">Recuperar contraseña</a>
+      </p>
+    </div>
+    <!-- /.login-card-body -->
+  </div>
+</div>
+<!-- /.login-box -->
+
+<!-- jQuery -->
+<script src="pw/assets/adminlte/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="pw/assets/adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!--Toast notify-->
+<script src="pw/assets/adminlte/plugins/toastr/toastr.min.js"></script>
+<!-- AdminLTE App -->
+<script src="pw/assets/adminlte/js/adminlte.min.js"></script>
+
+<script src="src/js/jsLogin.js"></script>
+<script src="src/js/jsMain.js"></script>
+
+</body>
+</html>

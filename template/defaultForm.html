@@ -1,0 +1,78 @@
+  
+<div class="g-pa-20">
+ 
+    <!-- 1-st column -->
+    <div class="col-md-12">
+      <form onsubmit="return submitForm();" method = "post" action = "" class="g-brd-around g-brd-gray-light-v4 g-pa-10 " role="form" id = "mainForm" name = "mainForm">
+      <!--<form method = "post" action = "" class="g-brd-around g-brd-gray-light-v4 g-pa-10 " role="form" id = "mainForm" name = "mainForm">-->
+
+
+        <div class = "row">
+            <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+                <label for="ID">Id.</label>                 
+                <input type="text" class="form-control" id="ID" placeholder="" value="__ID_VAL__">     
+                 <small class="form-control-feedback" id = "IDError"></small>       
+            </div>
+            <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+                <label for="CLASE">Clase</label>
+                <input type="text" class="form-control" id="CLASE" placeholder="__CLASE_VAL__">
+                <small class="form-control-feedback" id = "CLASEError"></small> 
+            </div>
+        </div>
+
+         <div class = "row">
+            <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+                <label for="NOMBRE_CLASE">Nombre clase</label>                 
+                <input type="text" class="form-control" id="NOMBRE_CLASE" placeholder="" value="__NOMBRE_CLASE_VAL__">            
+                <small class="form-control-feedback" id = "NOMBRE_CLASEError"></small> 
+            </div>
+            <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+                <label for="DESC_CLASE">Descripción clase</label>
+                <input type="text" class="form-control" id="DESC_CLASE" placeholder="__DESC_CLASE_VAL__">
+            </div>
+        </div>
+
+
+        <div class = "row">
+            <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+                <label for="CVE_MENU">Menú</label>                
+                __MENU__
+            </div>
+
+
+            <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">
+                <label for="PADRE">Padre</label>
+                __PADRE__
+            </div>
+        </div>
+
+
+        <div class = "row">
+           
+
+            <div class="form-group col-xs-10 col-sm-4 col-md-4 col-lg-4">                
+                <label for="DESC_CLASE">Estatus</label>
+                <input class="" type="checkbox" value="Value" id="STATUS">
+            </div>
+
+        </div>    
+
+        <div class = "row">
+            <button class="btn btn-info" style="margin-right: 5px;" id = "btnSave" name = "btnSave"><i class="fa  fa fa-save"> </i> Guardar</button>
+            <button data-fancybox-close="" class="btn btn-info" style="margin-right: 5px;" id = "btnSave" name = "btnSave"><i class="fa  fa fa-save"> </i> Cerrar</button>
+            <!--<button class="btn btn-primary" style="margin-right: 5px;" id = "btnSave" name = "btnSave" ><i class="fa  fa fa-save"> </i> Guardar</button>-->
+            <button data-fancybox-close="" class="fancybox-close-small" title="Close"></button>
+        </div>
+        <input type = "hidden" id = "mode" name = "mode" value = "__DOACTION__">
+        <input type = "hidden" id = "faction" name = "faction" value = "__FACTION__">
+
+
+        
+      </form>
+    </div>
+</div>
+
+
+<script>
+  
+</script>

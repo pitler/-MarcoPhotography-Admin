@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Title -->
+    <title>__PAGETITLE__</title>
+
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+
+
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="pw/assets/vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="pw/assets/vendor/icon-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="pw/assets/vendor/icon-line/css/simple-line-icons.css">
+    <link rel="stylesheet" href="pw/assets/vendor/icon-line-pro/style.css">
+    <link rel="stylesheet" href="pw/assets/vendor/icon-hs/style.css">
+    <link rel="stylesheet" href="pw/assets/vendor/animate.css">
+
+
+    <!-- CSS Unify -->
+
+    <link rel="stylesheet" href="pw/assets/css/unify-core.css">
+    <link rel="stylesheet" href="pw/assets/css/unify-components.css">
+    <link rel="stylesheet" href="pw/assets/css/unify-globals.css">
+    <link rel="stylesheet" href="css/system/loginStyle.css">
+    <link rel="stylesheet" href="pw/assets/admin/vendor/noty/lib/noty.css">
+
+    <link rel="stylesheet" href="pw/assets/admin/css/unify-admin.css">
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+
+<body>
+    <main>
+
+
+
+        <!-- Header -->
+        <header id="js-header" class="u-header u-header--static">
+            <div class="u-header__section u-header__section--light g-bg-white g-transition-0_3 g-py-10">
+                <nav class="js-mega-menu navbar navbar-expand-lg hs-menu-initialized hs-menu-horizontal">
+                    <div class="container">
+                        <!-- Responsive Toggle Button -->
+                        <button class="navbar-toggler navbar-toggler-right btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-3 g-right-0" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
+              <span class="hamburger hamburger--slider">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+              </span>
+              </span>
+            </button>
+                        <!-- End Responsive Toggle Button -->
+
+                        <!-- Logo -->
+                        <a href="?mod=inicio" class="navbar-brand">
+                            <img src="repository/logo/logo.png" alt="Logo">
+                        </a>
+                        <!-- End Logo -->
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <!-- Login -->
+        <section class="container g-pt-100 g-pb-20">
+            <div class="row justify-content-between">
+                <div class="col-md-6 col-lg-5 flex-md-unordered g-mb-80">
+                    <div class="g-brd-around g-brd-gray-light-v3 g-bg-white rounded g-px-30 g-py-50 mb-4">
+                        <header class="text-center mb-4">
+                            <h1 class="h3 g-color-black g-font-weight-300 text-capitalize">Accede a tu cuenta</h1>
+                        </header>
+
+                        <!-- Form -->
+                        <form class="g-py-15" id="loginForm">
+                            <div class="mb-4">
+                                <!-- Text Input with Left Appended Icon -->
+                                <div class="form-group  g-mb-20">
+                                    <div class="input-group g-brd-primary--focus">
+                                        <div class="input-group-addon d-flex align-items-center g-color-gray-light-v1 rounded-0">
+                                            <i class="icon-user"></i>
+                                        </div>
+                                        <input class="form-control form-control-md rounded-0" type="text" id="login" name="login" placeholder="Nombre de usuario">
+                                    </div>
+                                    <small class="form-control-feedback" id="loginError"></small>
+                                </div>
+
+                            </div>
+
+                            <div class="mb-4">
+                                <!-- Text Input with Left Appended Icon -->
+                                <div class="form-group g-mb-20">
+                                    <div class="input-group g-brd-primary--focus">
+                                        <div class="input-group-addon d-flex align-items-center g-color-gray-light-v1 rounded-0">
+                                            <i class="icon-lock"></i>
+                                        </div>
+                                        <input class="form-control form-control-md rounded-0" type="password" id="password" name="password" placeholder="Password">
+                                    </div>
+                                    <small class="form-control-feedback" id="passwordError"></small>
+                                </div>
+                                <!-- End Text Input with Left Appended Icon -->
+
+
+                            </div>
+
+                            <div class="row justify-content-between mb-4">
+
+                                <div class="col align-self-center text-right ">
+                                    <a class="g-font-size-13 text-primary" href="?mod=recover">Recuperar contraseña</a>
+                                </div>
+                            </div>
+
+                            <div class="mb-5">
+                                <input type="submit" class="btn btn-block u-btn-indigo g-py-13 " id="loginBtn" value="Entrar">
+                            </div>
+                        </form>
+                        <!-- End Form -->
+                    </div>
+                </div>
+
+                <div class="col-md-6 flex-md-first g-mb-80">
+                    <div class="mb-5">
+                        <h2 class="h1 g-font-weight-300 mb-3">__TITLE__</h2>
+                        <p class="g-color-gray-dark-v5"></p>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-9 text-center" id="loginLoader">
+                            <img src='pw/imagenes/loader.gif'> <br>Accediendo
+                        </div>
+
+                        <!-- Icon Blocks -->
+                        <div class="media mb-4" id="loginMsg">
+                            <div class="d-flex mr-4">
+                                <span class="align-self-center u-icon-v1 u-icon-size--sm g-color-red">
+                   <i class="icon-media-094 u-line-icon-pro"></i>
+                 </span>
+                            </div>
+                            <div class="media-body align-self-center">
+                                <p class="text-danger mb-0" id="loginText"></p>
+                            </div>
+                        </div>
+                        <!-- End Icon Blocks -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Login -->
+
+
+
+
+        <!-- Copyright Footer -->
+        <footer class="g-bg-gray-dark-v1 g-color-white-opacity-0_8 g-py-20">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 text-center text-md-left g-mb-10 g-mb-0--md">
+                        <div class="d-lg-flex">
+                            <small class="d-block g-font-size-default g-mr-10 g-mb-10 g-mb-0--md">__YEAR__ &copy; COVAF</small>
+                            <ul class="u-list-inline">
+                                <li class="list-inline-item">
+                                    <a class="g-color-white-opacity-0_8 g-color-white--hover" href="#!">Política de privacidad</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </footer>
+        <!-- End Copyright Footer -->
+        <a class="js-go-to u-go-to-v1" href="#!" data-type="fixed" data-position='{
+     "bottom": 15,
+     "right": 15
+   }' data-offset-top="400" data-compensation="#js-header" data-show-effect="zoomIn">
+            <i class="hs-icon hs-icon-arrow-top"></i>
+        </a>
+    </main>
+
+    <div class="u-outer-spaces-helper"></div>
+
+
+    <!-- JS Global Compulsory -->
+    <script src="pw/assets/vendor/jquery/jquery.min.js"></script>
+    <script src="pw/assets/vendor/jquery-migrate/jquery-migrate.min.js"></script>
+    <script src="pw/assets/vendor/popper.min.js"></script>
+    <script src="pw/assets/vendor/bootstrap/bootstrap.min.js"></script>
+
+    <script src="pw/assets/admin/vendor/noty/lib/noty.min.js"></script>
+
+
+    <!-- JS Implementing Plugins -->
+
+    <!-- JS Unify -->
+    <!--<script src="pw/assets/js/hs.core.js"></script>-->
+
+
+    <!-- JS Customization -->
+    <script src="src/js/jsMain.js"></script>
+    <!--<script src="assets/js/custom.js"></script>-->
+
+    <script src="src/js/jsLogin.js"></script>
+
+    <!-- JS Plugins Init. -->
+    <script>
+    </script>
+
+</body>
+
+</html>

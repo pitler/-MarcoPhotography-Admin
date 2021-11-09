@@ -1,0 +1,40 @@
+*------------------------------------
+  Error state v1
+------------------------------------*/
+.u-has-error-v1 .form-control,
+.u-has-error-v1 .input-group-addon,
+.u-has-error-v1 [class*="u-select"] {
+  background-color: #fff0f0; }
+
+.u-has-error-v1 .form-control[readonly],
+.u-has-error-v1 .input-group-addon[readonly],
+.u-has-error-v1 [class*="u-select"][readonly] {
+  background-color: #fff0f0; }
+
+.u-has-error-v1 .form-control-feedback {
+  color: #f00; }
+
+.u-has-error-v1 [class*="u-check-icon"] {
+  background-color: #fff0f0; }
+
+  
+/*Blog Photo Stream*/
+/*.blog-photos li {
+	display: inline;
+}
+
+.blog-photos li img {
+	width: 58px;
+	height: 58px;
+	margin: 0 2px 8px;
+}
+
+.blog-photos li .card {
+	width: 58px;
+	height: 58px;
+	margin: 0 2px 8px;
+}
+
+.blog-photos li img:hover {
+	box-shadow: 0 0 0 2px #72c02c;
+}*/

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>__PAGETITLE__</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="pw/assets/plugins/icon-awesome/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Tempusdominus Bbootstrap 4 -->
+  <link rel="stylesheet" href="pw/assets/adminlte/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <!-- JQuery UI Theme -->
+  <link rel="stylesheet" href="pw/assets/adminlte/plugins/jquery-ui/themes/redmond/jquery-ui.css">
+  <!-- Theme style -->  
+  <link rel="stylesheet" href="pw/assets/adminlte/css/adminlte.min.css">
+  <link rel="stylesheet" href="assets/css/mainStyle.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+  <!-- CSS Global -->
+  <link rel="stylesheet" href="pw/assets/adminlte/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <link rel="stylesheet" href="pw/assets/adminlte/plugins/toastr/toastr.min.css">
+  __CSSGLOBAL__  
+  <!--END CSS GLOBAL-->
+
+  <!--CSS IMPLEMENTING-->    
+  
+  __CSSIMPLEMENTING__
+  <!--END CSS IMPLEMENTING-->
+
+  <!--CSS IMPLEMENTING-->
+  <link rel="stylesheet" href="css/system/custom.css">
+  __CSSCUSTOM__
+    <!--END CSS IMPLEMENTING-->
+
+
+  __STYLE__
+</head>
+<body class="hold-transition sidebar-mini accent-lightblue layout-fixed">
+<div class="wrapper">
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-lightblue navbar-light">
+   
+<!-- Right navbar links -->
+<ul class="navbar-nav ml-auto">
+    
+    <!-- Notifications Dropdown Menu -->
+    <li class="nav-item dropdown">
+      <a class="nav-link" data-toggle="dropdown" href="#">
+        <i class="fa fa-user"></i>        
+      </a>
+      <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">        
+        <span class="dropdown-item dropdown-header">__USUARIO__</span>
+        <!--<div class="dropdown-divider"></div>
+        <a href="#" class="dropdown-item">
+          <i class="fas fa-envelope mr-2"></i> 4 new messages
+          <span class="float-right text-muted text-sm">3 mins</span>
+        </a>-->        
+        <div class="dropdown-divider"></div>
+        <a href="?mod=__LOGOUT__" class="dropdown-item dropdown-footer">Cerrar sesión</a>
+      </div>
+    </li>
+   
+  </ul>
+ 
+   
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-light-lightblue elevation-4" >
+    <!-- Brand Logo -->
+    
+    <a href="?mod=inicio" class="brand-link text-center">      
+      <img src = "repository/imagenes/logo/logoch.png" width = "150"><br>
+      <span class="brand-text font-weight-light">__PAGETITLE__</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="__AVATAR__" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="?mod=inicio" class="d-block">__USUARIO__</a>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">        
+        __SIDEBAR__
+      </nav>
+      <hr>
+
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="info">
+            <a href="#" class="d-block">Clase ::  __CLASE__</a>
+
+          </div>
+      </div>
+      
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0 text-dark">__MODNAME__</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Dashboard v1</li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+    <hr>
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">        
+        __CONTENT__
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  __FOOTER__
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="pw/assets/adminlte/plugins/jquery/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="pw/assets/adminlte/plugins/jquery-ui/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="pw/assets/adminlte/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+<!-- AdminLTE App -->
+<script src="pw/assets/adminlte/js/adminlte.js"></script>
+
+
+__JSGLOBAL__
+
+<script src="pw/assets/adminlte/plugins/moment/moment.min.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="pw/assets/adminlte/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<script src="pw/assets/adminlte/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<script src="pw/assets/adminlte/plugins/toastr/toastr.min.js"></script>
+
+
+__JSIMPLEMENTING__
+
+<!-- END JS IMPLEMENTING -->
+<!-- JS CUSTOM -->
+__JSCUSTOM__
+<!-- END JS CUSTOM-->
+
+<script src="src/js/jsCrud.js"></script>
+<script src="src/js/jsMain.js"></script>
+__JS__
+
+<script src="src/js/custom.js"></script>
+
+<script>
+  $(document).on('ready', function () {
+      // initialization of go to
+      __INIT__
+    });     
+</script>
+  
+
+
+</body>
+</html>

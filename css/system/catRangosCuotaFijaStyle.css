@@ -1,0 +1,26 @@
+/*.tableFixHead {
+    overflow-y: auto;
+    height: 300px;
+}
+
+.tableFixHead thead th {
+    position: sticky;
+    top: 0;
+}
+
+.detailTable {
+    border-collapse: collapse;
+    width: 90%;
+    font-size: 11px;
+}
+
+.detailTable th {
+    background: #d4d3d3;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #d4d3d3;
+}
+
+.detailTable td {
+    border: 1px solid #d4d3d3;
+}*/
